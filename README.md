@@ -66,4 +66,45 @@ Our solution delivers a **ranking system** that boosts offer engagement by **+19
 ---
 
 ## 📂 Repository Structure  
+├── data/ # Preprocessed & sampled datasets
+├── notebooks/ # Jupyter notebooks (EDA, feature engineering, modeling)
+├── src/ # Core pipeline scripts
+│ ├── features.py # Feature engineering
+│ ├── sampling.py # Smart negative sampling
+│ ├── model.py # LightGBM ranker training
+│ ├── tuning.py # Optuna optimization
+├── results/ # Metrics, plots, SHAP explanations
+└── README.md # Project overview
+
+
+---
+
+## 📜 Key Insights  
+- **Feature Engineering** was the biggest breakthrough (+0.264 MAP@7).  
+- **Smart Sampling** preserved ranking quality vs synthetic methods.  
+- **Systematic Tuning** via Optuna delivered production-ready robustness.  
+
+---
+
+## 🌍 Real-World Relevance  
+- **Finance**: Fraud detection, credit risk ranking.  
+- **E-commerce**: Personalized product recommendations.  
+- **Marketing**: Offer targeting & campaign optimization.  
+
+---
+
+## 📎 References  
+- [LambdaRank (Burges et al., NIPS 2006)](https://papers.nips.cc/paper/2006/hash/3434de9cdefbedc9fa8d4a7810e3df4e-Abstract.html)  
+- [Optuna: Hyperparameter Optimization Framework](https://optuna.org/)  
+
+---
+
+## 👥 Contributors  
+- **Mrinal Chaturvedi** — Modeling & Feature Engineering  
+- **Rounak Mishra** — Data Processing & Validation  
+- **Siddhant Shekhar** — Business Insights & Presentation  
+
+---
+
+⚡ *This project was developed as part of the American Express Campus Challenge 2025 — Decision Science Track, where our team secured a **Top 50 rank nationwide** (out of 11,753 teams).*  
 
